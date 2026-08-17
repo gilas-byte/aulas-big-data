@@ -3,7 +3,7 @@
 > Meu repositório pessoal de estudos da matéria de Big Data
 
 <p align="center">
-    <img src="media/unisenaipj.png" alt="Imagem representativa do nosso grupo de PJ3" width="55%">
+    <img src="media/unisenaipj.png" alt="Imagem representativa do Unisenai" width="55%">
 </p>
 
 | Aula                                   | Descrição                                                           |
