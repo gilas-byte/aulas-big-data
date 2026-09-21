@@ -15,10 +15,10 @@ Todos os números publicados aqui foram medidos executando os laboratórios. Ond
 
 | # | Laboratório | Emula | Motor | Duração |
 | --- | --- | --- | --- | --- |
-| 1 | [RDS / PostgreSQL](AULA01/RDS/README.md) | RDS Multi-AZ + Read Replica | PostgreSQL 15 | **~3 min** |
-| 2 | [ElastiCache / Redis](AULA01/elastic-cache-redis/README.md) | ElastiCache | Redis 7.0 | **~2 min** |
-| 3 | [Cassandra](AULA01/cassandra/README.md) | Keyspaces | Cassandra 4.1 | **~7 min** |
-| 4 | [DynamoDB / ScyllaDB](AULA01/dynamodb-scylladb/README.md) | DynamoDB | ScyllaDB 5.2 (Alternator) | **~8 min** |
+| 1 | [RDS / PostgreSQL](RDS/README.md) | RDS Multi-AZ + Read Replica | PostgreSQL 15 | **~3 min** |
+| 2 | [ElastiCache / Redis](elastic-cache-redis/README.md) | ElastiCache | Redis 7.0 | **~2 min** |
+| 3 | [Cassandra](cassandra/README.md) | Keyspaces | Cassandra 4.1 | **~7 min** |
+| 4 | [DynamoDB / ScyllaDB](dynamodb-scylladb/README.md) | DynamoDB | ScyllaDB 5.2 (Alternator) | **~8 min** |
 
 **Siga essa ordem.** Ela vai do caso mais simples de entender (uma réplica síncrona, uma assíncrona — o comportamento é óbvio depois que você vê) até o mais sutil (quóruns e níveis de consistência que se sobrepõem). Os laboratórios 3 e 4 fazem referência aos anteriores.
 
@@ -36,7 +36,7 @@ Executar os quatro leva **cerca de 20 minutos**, dos quais uns 11 são só esper
 
 Cada teste tem um identificador (T1, T2...) usado no README do laboratório.
 
-### 1. RDS / PostgreSQL — [abrir](AULA01/RDS/README.md)
+### 1. RDS / PostgreSQL — [abrir](RDS/README.md)
 
 Um primário com duas réplicas: uma **síncrona** (Multi-AZ) e uma **assíncrona** (Read Replica). Os dois quadrantes convivem no mesmo cluster.
 
@@ -48,7 +48,7 @@ Um primário com duas réplicas: uma **síncrona** (Multi-AZ) e uma **assíncron
 | T3 | Atrasa a réplica síncrona, depois a assíncrona | ELC | 110 s | **2042 ms/commit** vs. **5 ms/commit** |
 | T4 | Desconecta a síncrona, depois a assíncrona | PAC | ~68 s | **trava sem responder** vs. **513 ms** |
 
-### 2. ElastiCache / Redis — [abrir](AULA01/elastic-cache-redis/README.md)
+### 2. ElastiCache / Redis — [abrir](elastic-cache-redis/README.md)
 
 Um primário e duas réplicas. Você usa o comando `WAIT` para forçar o Redis a esperar confirmação das réplicas.
 
@@ -59,7 +59,7 @@ Um primário e duas réplicas. Você usa o comando `WAIT` para forçar o Redis a
 | T2 | Compara `WAIT 0`, `WAIT 1` e `WAIT 2` com uma réplica lenta | ELC | ~10 s | 15 ms / 15 ms / **2024 ms** |
 | T3 | Vai tirando réplicas: 2 → 1 → 0 | PAC | 58 s | `SET` **sempre aceito**; `WAIT` estoura o timeout |
 
-### 3. Cassandra — [abrir](AULA01/cassandra/README.md)
+### 3. Cassandra — [abrir](cassandra/README.md)
 
 Três nós, fator de replicação 3. Aqui você escolhe o nível de consistência **em cada consulta**.
 
@@ -71,7 +71,7 @@ Três nós, fator de replicação 3. Aqui você escolhe o nível de consistênci
 | T3 | Roda `ONE`, `QUORUM` e `ALL` com 3 → 2 → 1 nós | PAC | 78 s | tabela completa de quem responde e quem falha |
 | T4 | Compara `ONE` e `ALL` com um nó lento | ELC | ~50 s | 9 ms vs. **2002 ms** por escrita |
 
-### 4. DynamoDB / ScyllaDB — [abrir](AULA01/dynamodb-scylladb/README.md)
+### 4. DynamoDB / ScyllaDB — [abrir](dynamodb-scylladb/README.md)
 
 Três nós ScyllaDB expondo a API do DynamoDB. Você usa o `aws` CLI normalmente, como se fosse a AWS.
 

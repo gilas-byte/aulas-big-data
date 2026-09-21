@@ -16,11 +16,12 @@
 
 ```
 git clone "https://github.com/gilas-byte/aulas-Big-Data"
+```
 
-# Se houver alguma atualização, rode o comando abaixo
+Se houver alguma atualização
 
+```
 git pull
-
 ```
 
 Obrigado pela visita, bons estudos!
