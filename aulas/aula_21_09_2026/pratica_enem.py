@@ -85,7 +85,11 @@ def exercicio_2():
 
     Dica: .filter((cond1) & (cond2)).count() -- `and` do Python nao funciona.
     """
-    print("escreva a sua resposta em exercicio_2()")
+    (
+        print(candidatos
+        .filter((F.col("municipio") == 'Joinville') & (F.col("tipo_escola") == 'privada'))
+        .count())
+    )
 
 
 def exercicio_3():
