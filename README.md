@@ -22,11 +22,11 @@ This is a public repository for my **Big Data classes**, so you can see all the 
 
 | Class | Description |
 |---|---|
-| [03/08/2026](aulas/aula_03_08_2026) | 🧪 PACELC labs: testing in practice how distributed databases behave under failure. |
-| [17/08/2026](aulas/aula_17_08_2026) | 🗄️ Redis, MongoDB and Cassandra: practical tests across Key-Value, Document and Column data models. |
-| [21/09/2026](aulas/aula_21_09_2026) | ⚡ PySpark from scratch: DataFrames, local ETL and ENEM SC dataset processing. |
-| [05/10/2026](aulas/aula_05_10_2026) | 🥇 Medallion Architecture (Bronze, Silver, Gold) with PySpark, AWS S3 and Azure Blob. |
-| [19/10/2026](aulas/aula_19_10_2026) | 🚀 DadosPro final project: clickstream event pipeline, S3, AWS Glue, Athena and Streamlit. |
+| [08/03/26](aulas/aula_08_03_26) | 🧪 PACELC labs: testing in practice how distributed databases behave under failure. |
+| [08/17/26](aulas/aula_08_17_26) | 🗄️ Redis, MongoDB and Cassandra: practical tests across Key-Value, Document and Column data models. |
+| [09/21/26](aulas/aula_09_21_26) | ⚡ PySpark from scratch: DataFrames, local ETL and ENEM SC dataset processing. |
+| [10/05/26](aulas/aula_10_05_26) | 🥇 Medallion Architecture (Bronze, Silver, Gold) with PySpark, AWS S3 and Azure Blob. |
+| [10/19/26](aulas/aula_10_19_26) | 🚀 DadosPro final project: clickstream event pipeline, S3, AWS Glue, Athena and Streamlit. |
 
 ## Suit yourself and clone the repository
 
@@ -66,11 +66,11 @@ Este é um repositório público para minhas **aulas de Big Data**, para que voc
 
 | Aula | Descrição |
 |---|---|
-| [03/08/2026](aulas/aula_03_08_2026) | 🧪 Laboratórios PACELC: testando na prática como bancos distribuídos se comportam sob falha. |
-| [17/08/2026](aulas/aula_17_08_2026) | 🗄️ Redis, MongoDB e Cassandra: testes práticos com os modelos Key-Value, Document e Column. |
-| [21/09/2026](aulas/aula_21_09_2026) | ⚡ PySpark do zero: DataFrames, ETL local e processamento da base do ENEM SC. |
-| [05/10/2026](aulas/aula_05_10_2026) | 🥇 Arquitetura Medalhão (Bronze, Silver, Gold) com PySpark, AWS S3 e Azure Blob. |
-| [19/10/2026](aulas/aula_19_10_2026) | 🚀 Projeto final DadosPro: pipeline de eventos clickstream, S3, AWS Glue, Athena e Streamlit. |
+| [08/03/26](aulas/aula_08_03_26) | 🧪 Laboratórios PACELC: testando na prática como bancos distribuídos se comportam sob falha. |
+| [08/17/26](aulas/aula_08_17_26) | 🗄️ Redis, MongoDB e Cassandra: testes práticos com os modelos Key-Value, Document e Column. |
+| [09/21/26](aulas/aula_09_21_26) | ⚡ PySpark do zero: DataFrames, ETL local e processamento da base do ENEM SC. |
+| [10/05/26](aulas/aula_10_05_26) | 🥇 Arquitetura Medalhão (Bronze, Silver, Gold) com PySpark, AWS S3 e Azure Blob. |
+| [10/19/26](aulas/aula_10_19_26) | 🚀 Projeto final DadosPro: pipeline de eventos clickstream, S3, AWS Glue, Athena e Streamlit. |
 
 ## Sinta-se à vontade para clonar o repositório
 
