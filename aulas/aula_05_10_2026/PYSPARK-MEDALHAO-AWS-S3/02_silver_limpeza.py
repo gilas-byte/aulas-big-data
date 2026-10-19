@@ -106,7 +106,8 @@ def validar(normalizado: DataFrame) -> tuple[DataFrame, DataFrame]:
     nomes_validos = [m.upper() for m in NOMES_MUNICIPIOS]
 
     # TODO Exercicio 3: regra_valida = F.coalesce(..., F.lit(False))
-    regra_valida = None
+    regra_valida = F.coalesce
+    
 
     rejeitadas = normalizado.filter(~regra_valida).withColumn(
         "motivo",
